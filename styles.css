@@ -1,0 +1,162 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Playfair Display", serif;
+  font-optical-sizing: auto;
+  
+}
+
+body {
+    background-color: #eef1f3; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0e0f0f, #9fbddb);
+    color: rgb(243, 239, 241);
+}
+.header h1 {
+    font-size: 4.0rem;
+    margin-bottom: 3px;
+    font-family:  "Merriweather", serif;
+    
+}
+
+.header p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Grid de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen con efecto zoom */
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    transition: transform 0.5s;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+/* Info del producto */
+.product-info {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #141414;
+}
+
+.product-desc {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 1.3rem;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+}
+
+/* Producto destacado */
+.highlight {
+    border: 2px solid #e90707;
+    position: relative;
+}
+
+.highlight::before {
+    content: "🔥 MÁS VENDIDO";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background: linear-gradient(135deg, #0e0f0f, #9fbddb);
+    color: white;
+}
+
+.footer a {
+    color: #eeebed;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .product-image {
+        height: 220px;
+    }
+}
