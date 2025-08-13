@@ -3,210 +3,722 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>playeras MyM</title>
+    <title>Playeras Urbanas - Catálogo Móvil</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Catálogo profesional de playeras para hombre">
-    
 <body>
-    <!-- Encabezado -->
-    <header class="header">
-        <h1>MyM</h1>
-        <p> Calidad y precio</p>
+    <!-- Cabecera simplificada para móvil -->
+    <header class="mobile-header">
+        <div class="logo">
+            <h1>Playeras M&M</h1>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+
     
-    <!-- Contenedor de productos -->
-    <div class="container">
-        <div class="product-grid">
-            <!-- Producto 1 (con WhatsApp y destacado) -->
-            <div class="product-card highlight">
-                <img src="assets/HUGO clasica azul.jpeg" alt="Playera HUGO" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera HUGO</h3>
-                    <p class="product-desc">playera clasica azul, cuello redondo.</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Negra%20Clásica" class="whatsapp-btn">Pedir por WhatsApp</a>
+    <!-- Catálogo de productos -->
+    <main class="mobile-products" id="catalogo">
+        <h2>Nuestras Playeras</h2>
+        
+        <!-- Producto 1 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/TR azul.jpeg" alt="Playera TR" 
+                         class="main-image" data-zoom="assets/TR azul.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    
+                    <img src="assets/TR atras.jpeg" class="thumbnail active" 
+                         data-large="assets/TR atras.jpeg" data-zoom="assets/TR atras.jpeg">
+                    <img src="assets/TR adelante.jpeg" class="thumbnail active" 
+                         data-large="assets/TR adelante.jpeg" data-zoom="assets/TR adelante.jpeg">
+                    
                 </div>
             </div>
             
-            <!-- Producto 2 -->
-            <div class="product-card">
-                <img src="assets/ArmaniExchange negra AX.jpeg" alt="Playera AX" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera Armani Exchange</h3>
-                    <p class="product-desc">Cuello redondo, con bordado AX en frente</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20ArmaniExchange%20negra" class="whatsapp-btn">Pedir por WhatsApp</a>
+            <div class="product-info">
+                <h3>Playera True Religion </h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color azul marino, con estampado de alta calidad.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                        <option>XL</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20True%20Religion%20talla%20M" 
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        
+        <!-- Producto 2 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/HBOSS con estampado amarillo.jpeg" alt="Playera BOSS" 
+                         class="main-image" data-zoom="assets/HBOSS con estampado amarillo.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/boss azul con amarillo.jpeg" class="thumbnail active" 
+                         data-large="assets/boss azul con amarillo.jpeg" data-zoom="assets/boss azul con amarillo.jpeg">
+                    <img src="assets/boss azul con amarillo2.jpeg" class="thumbnail" 
+                         data-large="assets/boss azul con amarillo2.jpeg" data-zoom="assets/boss azul con amarillo2.jpeg">
                 </div>
             </div>
             
-            <!-- Producto 3 -->
-            <div class="product-card">
-                <img src="assets/BOSS azul cielo1 (1).jpeg" alt="Playera Boss" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera BOSS</h3>
-                    <p class="product-desc">playera BOSS, con bordado BOSS en frenete.</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20BOSS%20zulCielo" class="whatsapp-btn">Pedir por WhatsApp</a>
+            <div class="product-info">
+                <h3>Playera BOSS</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color azul marino, con estampado de alta calidad.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Boss-Azul-Marino%20talla%20M" 
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 3 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/nothface.jpeg" alt="Playera the TheNortFace" 
+                         class="main-image" data-zoom="assets/nothface.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/TheNortFace verde.jpeg" class="thumbnail active" 
+                         data-large="assets/TheNortFace verde.jpeg" data-zoom="assets/TheNortFace verde.jpeg">
+                    <img src="assets/nothface.jpeg" class="thumbnail" 
+                         data-large="assets/nothface.jpeg" data-zoom="assets/nothface.jpeg">
                 </div>
             </div>
+            
+            <div class="product-info">
+                <h3>Playera The Nort Face</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color verde </p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20theNothFace%20talla%20M" 
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 4 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/hugo parte del azul classç.jpeg" alt="Playera Hugo" 
+                         class="main-image" data-zoom="assets/hugo parte del azul classç.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/HUGO clasica azul.jpeg" class="thumbnail active" 
+                         data-large="assets/HUGO clasica azul.jpeg" data-zoom="assets/HUGO clasica azul.jpeg">
+                    <img src="assets/hugo parte del azul classç.jpeg" class="thumbnail" 
+                         data-large="assets/hugo parte del azul classç.jpeg" data-zoom="assets/hugo parte del azul classç.jpeg">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera Clasica HUGO</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color azul marino</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Clasica%20Hugo%20color%20Azul%20marino%20talla%20M" 
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+         <!-- Producto 5 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/armani negro2.jpeg" alt="Playera Hugo" 
+                         class="main-image" data-zoom="assets/armani negro2.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/ArmaniExchange negra AX.jpeg" class="thumbnail active" 
+                         data-large="assets/ArmaniExchange negra AX.jpeg" data-zoom="assets/ArmaniExchange negra AX.jpeg">
+                    <img src="assets/armani negro1.jpeg" class="thumbnail" 
+                         data-large="assets/armani negro1.jpeg" data-zoom="assets/armani negro1.jpeg">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera Armani Exchange</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color negro</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Armani%20Exchange%20color%20Negro%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+         <!-- Producto 6 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/balenciaga2.jpeg" alt="Playera balenciaga" 
+                         class="main-image" data-zoom="assets/balenciaga2.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/balenciaga negro.jpeg" class="thumbnail active" 
+                         data-large="assets/balenciaga negro.jpeg" data-zoom="assets/balenciaga negro.jpeg">
+                    <img src="assets/balenciaga2.jpeg" class="thumbnail" 
+                         data-large="assets/balenciaga2.jpeg" data-zoom="assets/balenciaga2.jpeg">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera BALENCIAGA</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color negro, con estampado de un esqueleto de pescado</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Balenciaga%20color%20Negro%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 7 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/boss azul cielo2.jpeg" alt="Playera boss" 
+                         class="main-image" data-zoom="assets/boss azul cielo2.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/BOSS azul cielo.jpeg" class="thumbnail active" 
+                         data-large="assets/BOSS azul cielo.jpeg" data-zoom="assets/BOSS azul cielo.jpeg">
+                    <img src="assets/boss azul cielo1.jpeg" class="thumbnail" 
+                         data-large="assets/boss azul cielo1.jpeg" data-zoom="assets/boss azul cielo1.jpeg">
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera BOSS</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color azul cielo, con estampado de alta calidad.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20azul%20cielo%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 8 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/BOSS blanco.jpeg" alt="Playera boss" 
+                         class="main-image" data-zoom="assets/BOSS blanco.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/BOSS blanco.jpeg" class="thumbnail active" 
+                         data-large="assets/BOSS blanco.jpeg" data-zoom="assets/BOSS blanco.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera BOSS</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera en color blanco, con estampado de alta calidad.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20blanco%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+         <!-- Producto 9 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/BOSS Negra.jpeg" alt="Playera boss" 
+                         class="main-image" data-zoom="assets/BOSS Negra.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/BOSS Negra.jpeg" class="thumbnail active" 
+                         data-large="assets/BOSS Negra.jpeg" data-zoom="assets/BOSS Negra.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera BOSS</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera BOSS color negro.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20negro%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 10 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/hugo color rojo1.jpeg" alt="Playera boss" 
+                         class="main-image" data-zoom="assets/hugo color rojo1.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/BOSS rojo.jpeg" class="thumbnail active" 
+                         data-large="assets/BOSS rojo.jpeg" data-zoom="assets/BOSS rojo.jpeg">
+                    <img src="assets/hugo color rojo2.jpeg" class="thumbnail active" 
+                         data-large="assets/hugo color rojo2.jpeg" data-zoom="assets/hugo color rojo2.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera HUGO</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera HUGO color rojo.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20HUGO%20color%20rojo%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 11 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/burberry negro2.jpeg" alt="Playera boss" 
+                         class="main-image" data-zoom="assets/burberry negro2.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/burberry negro1.jpeg" class="thumbnail active" 
+                         data-large="assets/burberry negro1.jpeg" data-zoom="assets/burberry negro1.jpeg">
+                    <img src="assets/burberrynegro3.jpeg" class="thumbnail active" 
+                         data-large="assets/burberrynegro3.jpeg" data-zoom="assets/burberrynegro3.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera BURBERRY</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera BURBERRY, color negro.</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BURBERRY%20color%20negro%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 12 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/CalvinKlein azul.jpeg" alt="Playera Calvin Clein" 
+                         class="main-image" data-zoom="assets/CalvinKlein azul.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/calvinClein1.jpeg" class="thumbnail active" 
+                         data-large="assets/calvinClein1.jpeg" data-zoom="assets/calvinClein1.jpeg">
+                    <img src="assets/CalvinKlein azul.jpeg" class="thumbnail active" 
+                         data-large="assets/CalvinKlein azul.jpeg" data-zoom="assets/CalvinKlein azul.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera Calvin Klein</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera Calvin Klein, color azul marino</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Calvin%20Klein%20color%20azul%20marino%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+         <!-- Producto 13 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/lacoste azul2.jpeg" alt="Playera Lacoste" 
+                         class="main-image" data-zoom="assets/lacoste azul2.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/camisa tipo polo Lacoste.jpeg" class="thumbnail active" 
+                         data-large="assets/camisa tipo polo Lacoste.jpeg" data-zoom="assets/camisa tipo polo Lacoste.jpeg">
+                    <img src="assets/lacoste azul1.jpeg" class="thumbnail active" 
+                         data-large="assets/lacoste azul1.jpeg" data-zoom="assets/lacoste azul1.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera LACOSTE</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera LACOSTE tipo polo</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Lacoste%20tipo%20polo%20azul%20marino%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 14 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/coachAzul.jpeg" alt="Playera Lacoste" 
+                         class="main-image" data-zoom="assets/coachAzul.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/COACH azul.jpeg" class="thumbnail active" 
+                         data-large="assets/COACH azul.jpeg" data-zoom="assets/COACH azul.jpeg">
+                    <img src="assets/coachAzul1.jpeg" class="thumbnail active" 
+                         data-large="assets/coachAzul1.jpeg" data-zoom="assets/coachAzul1.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera COACH</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera COACH azul marino, con estampado de un osito</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20azul%20marino%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 15 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/coach dino1.jpeg" alt="Playera Lacoste" 
+                         class="main-image" data-zoom="assets/coach dino1.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/COACH dino.jpeg" class="thumbnail active" 
+                         data-large="assets/COACH dino.jpeg" data-zoom="assets/COACH dino.jpeg">
+                    <img src="assets/coach dino2.jpeg" class="thumbnail active" 
+                         data-large="assets/coach dino2.jpeg" data-zoom="assets/coach dino2.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera COACH</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera COACH, en color blanco, con estampado de un dinosaurio</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20blaco%20%20con%20estampado%20de%20un%20dinosaurio%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 16 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/Karl Lagerfeld Verde.jpeg" alt="Playera Karl" 
+                         class="main-image" data-zoom="assets/Karl Lagerfeld Verde.jpeg">
+                </div>
+                <div class="thumbnails-scroll">
+                    <img src="assets/karl lafergeld2.jpeg" class="thumbnail active" 
+                         data-large="assets/karl lafergeld2.jpeg" data-zoom="assets/karl lafergeld2.jpeg">
+                    <img src="assets/karl lagerfeld1.jpeg" class="thumbnail active" 
+                         data-large="assets/karl lagerfeld1.jpeg" data-zoom="assets/karl lagerfeld1.jpeg">
+                    
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera KARL LAGERFELD</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera KARL LAGERFELD, color verd</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Karl%20LAGERFELD%20%20color%20verde%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+        <!-- Producto 17 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/Lacoste azul.jpeg" alt="Playera Karl" 
+                         class="main-image" data-zoom="assets/Lacoste azul.jpeg">
+                </div>
+                
+               
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera LACOSTE</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera LACOSTE en color azul marino</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select>
+                        <option>Chica</option>
+                        <option selected>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                
+                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20LACOSTE%20color%20azul%20marino%20talla%20M"
+                   class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </article>
+    </main>
 
-            <!-- Producto 4 -->
-            <div class="product-card">
-                <img src="assets/BOSS rojo.jpeg" alt="Playera BOSS rojo" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera BOSS</h3>
-                    <p class="product-desc">Playera clasica cuello redondo, color rojo</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Gris%20BOSS?%20Rojo"  class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 5 -->
-            <div class="product-card">
-                <img src="assets/COACH dino.jpeg" alt="Playera COACH" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera COACH</h3>
-                    <p class="product-desc">playera blanca, cuello redondo con estampado de dino</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Gris%20COACH" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 6 -->
-            <div class="product-card">
-                <img src="assets/HBOSS con estampado amarillo.jpeg" alt="Playera BOSS" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera BOSS</h3>
-                    <p class="product-desc">playera BOSS con estampado en frente, cuello redondo</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Azul%20BOSS%20Estampado%20Amarillo" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 7 -->
-            <div class="product-card">
-                <img src="assets/Karl Lagerfeld Verde.jpeg" alt="Playera Karl Lagerfeld" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera Karl Lagerfeld</h3>
-                    <p class="product-desc">Cuello redondo, color verde, logo bordado enfrente </p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Gris%20Karl%20Lagerfeld" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 8 -->
-            <div class="product-card">
-                <img src="assets/TheNortFace verde.jpeg" alt="Playera The Nort Face" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera THE NORT FACE</h3>
-                    <p class="product-desc">Playera cuello redondo, color verde con estampado de logo enrente</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Gris%20TheNortFace%20Verde" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 9 -->
-            <div class="product-card">
-                <img src="assets/TR azul.jpeg" alt="Playera TR" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera TRUE RELIGION JEANS</h3>
-                    <p class="product-desc">Playera Azul, Cuello redondo con logo chico en frente y un logo grande de TR en la parte de atras</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Gris%20True%20Religion%20Jeans" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 10 -->
-            <div class="product-card">
-                <img src="assets/camisa tipo polo Lacoste.jpeg" alt="Playera Gris Oversized" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera LACOSTE</h3>
-                    <p class="product-desc">LACOSTE, cuello tipo polo, color azul marino</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20azul%20LACOSTE" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 11 -->
-            <div class="product-card highlight">
-                <img src="assets/balenciaga negro.jpeg" alt="Playera Balenciaga" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera BALENCIAGA</h3>
-                    <p class="product-desc">Playera negra. cuello redondo, con estampado de pescado azul</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20negra%20balenciaga" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 12 -->
-            <div class="product-card">
-                <img src="assets/BOSS blanco.jpeg" alt="Playera BOSS blanco" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera BOSS</h3>
-                    <p class="product-desc">Playera blanca cuello redondo</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20BOSS%20BLANCA" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 13 -->
-            <div class="product-card">
-                <img src="assets/CalvinKlein azul.jpeg" alt="Playera CalvinKlein" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera CALVIN KLEIN</h3>
-                    <p class="product-desc">playera color azul marino, cuello redondo</p>
-                    <p class="product-desc">TALLAS: S,M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/528116404244?text=¡Hola!%20Quiero%20la%20Playera%20Azul%20Marino%20CalvinKlein" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 14 -->
-            <div class="product-card">
-                <img src="assets/COACH azul.jpeg" alt="Playera COACH" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera COACH</h3>
-                    <p class="product-desc">playera azul marino,cuelo redondo,con estampado COACH</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/+528116404244?text=¡Hola!%20Quiero%20la%20Playera%20azul%20Marino%20COACH" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- Producto 15 -->
-            <div class="product-card">
-                <img src="assets/Lacoste azul.jpeg" alt="Playera LACOSTE" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Playera Gris LACOSTE</h3>
-                    <p class="product-desc">Cuello redondo, con estampado lacoste</p>
-                    <p class="product-desc">TALLAS: S, M, L, XL</p>
-                    <p class="product-price">$400 MXN</p>
-                    <a href="https://wa.me/+528116404244?text=¡Hola!%20Quiero%20la%20Playera%20azul%20LACOSTE" class="whatsapp-btn">Pedir por WhatsApp</a>
-                </div>
-            </div>
+    <!-- Zoom para móvil -->
+    <div class="mobile-zoom" id="mobileZoom">
+        <span class="close-zoom">&times;</span>
+        <img src="" alt="Zoom" class="zoomed-image" id="zoomedImage">
+        <div class="zoom-controls">
+            <button class="zoom-in" id="zoomIn">+</button>
+            <button class="zoom-out" id="zoomOut">−</button>
         </div>
     </div>
-    
-    <!-- Pie de página -->
-    <footer class="footer">
-        <p>© 2025 <strong>PLAYERAS MyM</strong> • WhatsApp: <a href="https://wa.me/+528116404244">528116404244</a></p>
+
+    <!-- Footer móvil -->
+    <footer class="mobile-footer">
+        <div class="whatsapp-float">
+            <a href="https://wa.me/528116404244" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>© 2025 Playeras MyM</p>
+        <p><a href="tel:+525512345678">Llámanos: 8116404244</a></p>
     </footer>
+
+    <script>
+        // Menú móvil
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const nav = document.getElementById('mobileNav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Galería de productos
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Cambiar imagen principal
+                const productCard = this.closest('.product-card');
+                const mainImage = productCard.querySelector('.main-image');
+                mainImage.src = this.dataset.large;
+                mainImage.dataset.zoom = this.dataset.zoom;
+                
+                // Actualizar miniaturas activas
+                const thumbnails = productCard.querySelectorAll('.thumbnail');
+                thumbnails.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Zoom para móvil
+        const mobileZoom = document.getElementById('mobileZoom');
+        const zoomedImage = document.getElementById('zoomedImage');
+        let currentScale = 1;
+        
+        document.querySelectorAll('.main-image').forEach(img => {
+            img.addEventListener('click', function() {
+                if (this.dataset.zoom) {
+                    zoomedImage.src = this.dataset.zoom;
+                    zoomedImage.style.transform = 'scale(1)';
+                    currentScale = 1;
+                    mobileZoom.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; // Bloquear scroll
+                }
+            });
+        });
+        
+        // Cerrar zoom
+        document.querySelector('.close-zoom').addEventListener('click', function() {
+            mobileZoom.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Controles de zoom
+        document.getElementById('zoomIn').addEventListener('click', function() {
+            currentScale += 0.5;
+            zoomedImage.style.transform = `scale(${currentScale})`;
+        });
+        
+        document.getElementById('zoomOut').addEventListener('click', function() {
+            if (currentScale > 1) {
+                currentScale -= 0.5;
+                zoomedImage.style.transform = `scale(${currentScale})`;
+            }
+        });
+        
+        // Cerrar al tocar fuera
+        mobileZoom.addEventListener('click', function(e) {
+            if (e.target === this) {
+                mobileZoom.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
 </body>
 </html>
