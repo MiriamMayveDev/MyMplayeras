@@ -63,7 +63,7 @@
                 <a href="#" id="whatsapp-link" class="whatsapp-btn">
     <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
 </a>
-
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
 <script>
     document.getElementById('size-select').addEventListener('change', function() {
         const selectedSize = this.value;
@@ -102,17 +102,31 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Boss-Azul-Marino%20talla%20M" 
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+             
+                
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Boss-Azul-Marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Boss-Azul-Marino%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 3 -->
@@ -137,17 +151,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20theNothFace%20talla%20M" 
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20theNothFace%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20theNothFace%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 4 -->
@@ -172,17 +198,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Clasica%20Hugo%20color%20Azul%20marino%20talla%20M" 
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text==Hola,%20quiero%20la%20Playera%20HUGO%20color%20azul%20marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20HUGO%20color%20azul%20marino%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
          <!-- Producto 5 -->
@@ -207,17 +245,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Armani%20Exchange%20color%20Negro%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text==Hola,%20quiero%20la%20Playera%20ARMANI%20EXCHANGE%20color%20negro%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
          <!-- Producto 6 -->
@@ -242,17 +292,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Balenciaga%20color%20Negro%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playerao%20BALENCIAGA%20color%20negro%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BALENCIAGA%20color%20negro%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 7 -->
@@ -277,17 +339,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20azul%20cielo%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20azul%20cielo%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20azul%20cielo%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 8 -->
@@ -311,17 +385,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20blanco%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20blanco%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20blanco%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
          <!-- Producto 9 -->
@@ -345,17 +431,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20negro%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20negro%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BOSS%20color%20negro%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 10 -->
@@ -381,17 +479,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20HUGO%20color%20rojo%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20HUGO%20color%20rojo%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20HUGO%20color%20rojo%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 11 -->
@@ -417,17 +527,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BURBERRY%20color%20negro%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BURBERRY%20color%20negro%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20BURBERRY%20color%20negro%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 12 -->
@@ -451,19 +573,31 @@
                 <p class="price">$300.00 MXN</p>
                 <p class="description">playera Calvin Klein, color azul marino</p>
                 
-                <div class="size-selector">
+               <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Calvin%20Klein%20color%20azul%20marino%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Calvin%20Klein%20color%20azul%20marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Calvin%20Klein%20color%20azul%20marino%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
          <!-- Producto 13 -->
@@ -489,17 +623,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Lacoste%20tipo%20polo%20azul%20marino%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20LACOSTE%20tipo%20polo%20color%20azul%20marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20LACOSTE%20tipo%20polo%20color%20azul%20marino%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 14 -->
@@ -525,17 +671,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20azul%20marino%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20azul%20marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20azul%20marino%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 15 -->
@@ -561,17 +719,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20blaco%20%20con%20estampado%20de%20un%20dinosaurio%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20color%20blanco%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20COACH%20color%20blanco%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 16 -->
@@ -597,17 +767,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Karl%20LAGERFELD%20%20color%20verde%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Karl%20LAGERFELD%20color%20verde%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20Karl%20LAGERFELD%20color%20verde%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         <!-- Producto 17 -->
@@ -628,17 +810,72 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20LACOSTE%20color%20azul%20marino%20talla%20M"
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20clasica%20Lacoste%20color%20azul%20marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20clasica%20Lacoste%20color%20azul%20marino%20talla%20${defaultSize}`;
+    });
+</script>
+            </div>
+        </article>
+         <!-- Producto 18 -->
+        <article class="product-card">
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img src="assets/GuessNegra.jpeg" alt="Playera Karl" 
+                         class="main-image" data-zoom="assets/GuessNegra.jpeg">
+                </div>
+                
+               
+            </div>
+            
+            <div class="product-info">
+                <h3>Playera GUESS</h3>
+                <p class="price">$300.00 MXN</p>
+                <p class="description">playera GUESS en color negro</p>
+                
+                <div class="size-selector">
+                    <span>Talla:</span>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
+                    </select>
+                </div>
+                
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+<!-- Este script actualiza el enlace de WhatsApp según la talla seleccionada2 -->
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20clasica%20GUESS%20color%20negro%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20clasica%20GUESS%20color%20negro%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
     </main>
