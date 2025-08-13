@@ -54,18 +54,29 @@
                 
                 <div class="size-selector">
                     <span>Talla:</span>
-                    <select>
-                        <option>Chica</option>
-                        <option selected>Mediana</option>
-                        <option>Grande</option>
-                        <option>XL</option>
+                    <select  id="size-select">
+                        <option value="M" selected>Mediana (M)</option>>
+                        <option value="G" selected>Grande (G)</option>>
                     </select>
                 </div>
                 
-                <a href="https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20True%20Religion%20talla%20M" 
-                   class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
-                </a>
+                <a href="#" id="whatsapp-link" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+</a>
+
+<script>
+    document.getElementById('size-select').addEventListener('change', function() {
+        const selectedSize = this.value;
+        const whatsappLink = document.getElementById('whatsapp-link');
+        whatsappLink.href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20TRUE%20RELIGION%20color%20azul%20marino%20talla%20${selectedSize}`;
+    });
+
+    // Inicializar el link con la talla seleccionada por defecto (M)
+    document.addEventListener('DOMContentLoaded', function() {
+        const defaultSize = document.getElementById('size-select').value;
+        document.getElementById('whatsapp-link').href = `https://wa.me/528116404244?text=Hola,%20quiero%20la%20Playera%20TRUE%20RELIGION%20color%20azul%20marino%20talla%20${defaultSize}`;
+    });
+</script>
             </div>
         </article>
         
